@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated TTS and OCR</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="Images/icon.png" type="icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .page-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("Images/background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .color-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 600px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .our-team {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Added line to horizontally center the image */
+            margin-bottom: 20px;
+        }
+
+        .our-team img {
+            width: 900px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            /* Updated color */
+            color: #fff;
+            padding: 0px;
+            margin-bottom: 20px;
+            position: fixed;
+            /* Added the position property */
+            width: 100%;
+            /* Added width property to span the entire width */
+            top: 0;
+            /* Added top property to position it at the top */
+            z-index: 999;
+            /* Added z-index property to ensure it is above other elements */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header"> <!-- Added the header class -->
+        <h1>Integrated TTS and OCR Tutorial Page</h1>
+    </header>
+
+    <div class="page-background"></div>
+    <div class="color-overlay"></div>
+
+    <div class="image-container">
+        <img src="Images/ss1.jpg" alt="Image 1">
+        <p>Our Integrated TTS and OCR app offers various features for those in need. Come and let's check it out!</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss2.jpg" alt="Image 2">
+        <p>Integrated TTS and OCR provides support for different languages, whether locally or globally.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss3.jpg" alt="Image 3">
+        <p>For local use, you can choose between Tagalog, Ilocano, Cebuano, and Ilonggo.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss4.jpg" alt="Image 4">
+        <p>For global use, you can also choose between English, Chinese, Japanese, and Korean.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss5.jpg" alt="Image 5">
+        <p>This app includes OCR, also known as "Optical Character Recognition," a technology that extracts text from
+            images or scanned documents. It employs computer vision, pattern recognition, and machine learning
+            techniques to recognize and interpret characters within an image.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss9.jpg" alt="Image 10">
+        <p>Click the scan button and...</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss10.jpg" alt="Image 9">
+        <p>Just wait for a few moments.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss6.jpg" alt="Image 6">
+        <p>This app allows you to choose between 2 voice options to enhance your experience and improve the overall
+            quality of synthesized speech.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss7.jpg" alt="Image 7">
+        <p>Our app includes a repeat button that allows you to listen to the synthesized speech multiple times, aiding
+            comprehension and understanding of the content.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Images/ss8.jpg" alt="Image 8">
+        <p>After making your selections, you can click the speak button to play the output.</p>
+    </div>
+    <br>
+    <h1>OUR TEAM</h1>
+
+    <div>
+        <a class="our-team">
+            <img src="Images/our_team.jpg" alt="Our Team">
+        </a>
+    </div>
+    <br>
+
+    <footer>
+        <p>© 2023 Integrated TTS and OCR. All rights reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
